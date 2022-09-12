@@ -1,6 +1,13 @@
 {
   "version": "16.0.0",
   "artifacts": {
+    "assembly-CdkWorkshopStack-Deploy": {
+      "type": "cdk:cloud-assembly",
+      "properties": {
+        "directoryName": "assembly-CdkWorkshopStack-Deploy",
+        "displayName": "CdkWorkshopStack/Deploy"
+      }
+    },
     "Tree": {
       "type": "cdk:tree",
       "properties": {
@@ -23,7 +30,7 @@
         "validateOnSynth": false,
         "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
         "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
-        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/b3973c619d9edbfe986435613b34f3a187e1746b218c9ad1e91e516f03d59a0a.json",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/6d527487013222d847a10fdbfbf0ee8fe7f9f35085ad8235f1e5900f313792ce.json",
         "requiresBootstrapStackVersion": 6,
         "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
         "additionalDependencies": [
@@ -39,226 +46,154 @@
         "CdkWorkshopStack.assets"
       ],
       "metadata": {
-        "/CdkWorkshopStack/HelloHandler/ServiceRole/Resource": [
+        "/CdkWorkshopStack/BlogPipeline/Pipeline/ArtifactsBucket/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "HelloHandlerServiceRole11EF7C63"
+            "data": "BlogPipelineArtifactsBucket1006C015"
           }
         ],
-        "/CdkWorkshopStack/HelloHandler/Resource": [
+        "/CdkWorkshopStack/BlogPipeline/Pipeline/ArtifactsBucket/Policy/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "HelloHandler2E4FBA4D"
+            "data": "BlogPipelineArtifactsBucketPolicyF27967EB"
           }
         ],
-        "/CdkWorkshopStack/HelloHitCounter/Hits/Resource": [
+        "/CdkWorkshopStack/BlogPipeline/Pipeline/Role/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "HelloHitCounterHits7AAEBF80"
+            "data": "BlogPipelineRoleDDAC8F2A"
           }
         ],
-        "/CdkWorkshopStack/HelloHitCounter/HitCounterHandler/ServiceRole/Resource": [
+        "/CdkWorkshopStack/BlogPipeline/Pipeline/Role/DefaultPolicy/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "HelloHitCounterHitCounterHandlerServiceRoleD45002B8"
+            "data": "BlogPipelineRoleDefaultPolicyBA46CEE3"
           }
         ],
-        "/CdkWorkshopStack/HelloHitCounter/HitCounterHandler/ServiceRole/DefaultPolicy/Resource": [
+        "/CdkWorkshopStack/BlogPipeline/Pipeline/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "HelloHitCounterHitCounterHandlerServiceRoleDefaultPolicy1487A60A"
+            "data": "BlogPipeline9EFE27BC"
           }
         ],
-        "/CdkWorkshopStack/HelloHitCounter/HitCounterHandler/Resource": [
+        "/CdkWorkshopStack/BlogPipeline/Pipeline/Source/ijovanovski_cdkworkshop/CodePipelineActionRole/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "HelloHitCounterHitCounterHandlerDAEA7B37"
+            "data": "BlogPipelineSourceijovanovskicdkworkshopCodePipelineActionRole0178CD4E"
           }
         ],
-        "/CdkWorkshopStack/Endpoint/Resource": [
+        "/CdkWorkshopStack/BlogPipeline/Pipeline/Source/ijovanovski_cdkworkshop/CodePipelineActionRole/DefaultPolicy/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "EndpointEEF1FD8F"
+            "data": "BlogPipelineSourceijovanovskicdkworkshopCodePipelineActionRoleDefaultPolicy7F8E4121"
           }
         ],
-        "/CdkWorkshopStack/Endpoint/CloudWatchRole/Resource": [
+        "/CdkWorkshopStack/BlogPipeline/Pipeline/Build/SynthStep/CdkBuildProject/Role/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "EndpointCloudWatchRoleC3C64E0F"
+            "data": "BlogPipelineBuildSynthStepCdkBuildProjectRoleD5E062BF"
           }
         ],
-        "/CdkWorkshopStack/Endpoint/Account": [
+        "/CdkWorkshopStack/BlogPipeline/Pipeline/Build/SynthStep/CdkBuildProject/Role/DefaultPolicy/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "EndpointAccountB8304247"
+            "data": "BlogPipelineBuildSynthStepCdkBuildProjectRoleDefaultPolicyF3BA78F6"
           }
         ],
-        "/CdkWorkshopStack/Endpoint/Deployment/Resource": [
+        "/CdkWorkshopStack/BlogPipeline/Pipeline/Build/SynthStep/CdkBuildProject/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "EndpointDeployment318525DA7a02bafcf1f33a692d15312adb602478"
+            "data": "BlogPipelineBuildSynthStepCdkBuildProject78A446D8"
           }
         ],
-        "/CdkWorkshopStack/Endpoint/DeploymentStage.prod/Resource": [
+        "/CdkWorkshopStack/BlogPipeline/Pipeline/Build/SynthStep/CodePipelineActionRole/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "EndpointDeploymentStageprodB78BEEA0"
+            "data": "BlogPipelineBuildSynthStepCodePipelineActionRole18BDCD49"
           }
         ],
-        "/CdkWorkshopStack/Endpoint/Endpoint": [
+        "/CdkWorkshopStack/BlogPipeline/Pipeline/Build/SynthStep/CodePipelineActionRole/DefaultPolicy/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "Endpoint8024A810"
+            "data": "BlogPipelineBuildSynthStepCodePipelineActionRoleDefaultPolicy3392D3D0"
           }
         ],
-        "/CdkWorkshopStack/Endpoint/Default/{proxy+}/Resource": [
+        "/CdkWorkshopStack/BlogPipeline/Pipeline/UpdatePipeline/SelfMutate/CodePipelineActionRole/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "Endpointproxy39E2174E"
+            "data": "BlogPipelineUpdatePipelineSelfMutateCodePipelineActionRoleD4C3EA6B"
           }
         ],
-        "/CdkWorkshopStack/Endpoint/Default/{proxy+}/ANY/ApiPermission.CdkWorkshopStackEndpoint018E8349.ANY..{proxy+}": [
+        "/CdkWorkshopStack/BlogPipeline/Pipeline/UpdatePipeline/SelfMutate/CodePipelineActionRole/DefaultPolicy/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "EndpointproxyANYApiPermissionCdkWorkshopStackEndpoint018E8349ANYproxy747DCA52"
+            "data": "BlogPipelineUpdatePipelineSelfMutateCodePipelineActionRoleDefaultPolicy7BD34E58"
           }
         ],
-        "/CdkWorkshopStack/Endpoint/Default/{proxy+}/ANY/ApiPermission.Test.CdkWorkshopStackEndpoint018E8349.ANY..{proxy+}": [
+        "/CdkWorkshopStack/BlogPipeline/Pipeline/Assets/FileAsset1/CodePipelineActionRole/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "EndpointproxyANYApiPermissionTestCdkWorkshopStackEndpoint018E8349ANYproxy41939001"
+            "data": "BlogPipelineAssetsFileAsset1CodePipelineActionRole6BF3C2FF"
           }
         ],
-        "/CdkWorkshopStack/Endpoint/Default/{proxy+}/ANY/Resource": [
+        "/CdkWorkshopStack/BlogPipeline/Pipeline/Assets/FileAsset1/CodePipelineActionRole/DefaultPolicy/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "EndpointproxyANYC09721C5"
+            "data": "BlogPipelineAssetsFileAsset1CodePipelineActionRoleDefaultPolicyB08292E6"
           }
         ],
-        "/CdkWorkshopStack/Endpoint/Default/ANY/ApiPermission.CdkWorkshopStackEndpoint018E8349.ANY..": [
+        "/CdkWorkshopStack/BlogPipeline/Pipeline/Assets/FileAsset2/CodePipelineActionRole/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "EndpointANYApiPermissionCdkWorkshopStackEndpoint018E8349ANYE84BEB04"
+            "data": "BlogPipelineAssetsFileAsset2CodePipelineActionRole07BFA118"
           }
         ],
-        "/CdkWorkshopStack/Endpoint/Default/ANY/ApiPermission.Test.CdkWorkshopStackEndpoint018E8349.ANY..": [
+        "/CdkWorkshopStack/BlogPipeline/Pipeline/Assets/FileAsset2/CodePipelineActionRole/DefaultPolicy/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "EndpointANYApiPermissionTestCdkWorkshopStackEndpoint018E8349ANYB6CC1B64"
+            "data": "BlogPipelineAssetsFileAsset2CodePipelineActionRoleDefaultPolicy25E88F8B"
           }
         ],
-        "/CdkWorkshopStack/Endpoint/Default/ANY/Resource": [
+        "/CdkWorkshopStack/BlogPipeline/UpdatePipeline/SelfMutation/Role/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "EndpointANY485C938B"
+            "data": "BlogPipelineUpdatePipelineSelfMutationRole4267B817"
           }
         ],
-        "/CdkWorkshopStack/ViewHitCounter/Rendered/ServiceRole/Resource": [
+        "/CdkWorkshopStack/BlogPipeline/UpdatePipeline/SelfMutation/Role/DefaultPolicy/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "ViewHitCounterRenderedServiceRole254DB4EA"
+            "data": "BlogPipelineUpdatePipelineSelfMutationRoleDefaultPolicy28EA1595"
           }
         ],
-        "/CdkWorkshopStack/ViewHitCounter/Rendered/ServiceRole/DefaultPolicy/Resource": [
+        "/CdkWorkshopStack/BlogPipeline/UpdatePipeline/SelfMutation/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "ViewHitCounterRenderedServiceRoleDefaultPolicy9ADB8C83"
+            "data": "BlogPipelineUpdatePipelineSelfMutationAC20B857"
           }
         ],
-        "/CdkWorkshopStack/ViewHitCounter/Rendered/Resource": [
+        "/CdkWorkshopStack/BlogPipeline/Assets/FileRole/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "ViewHitCounterRendered9C783E45"
+            "data": "BlogPipelineAssetsFileRoleF816E468"
           }
         ],
-        "/CdkWorkshopStack/ViewHitCounter/ViewerEndpoint/Resource": [
+        "/CdkWorkshopStack/BlogPipeline/Assets/FileRole/DefaultPolicy/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "ViewHitCounterViewerEndpoint5A0EF326"
+            "data": "BlogPipelineAssetsFileRoleDefaultPolicy9FB73983"
           }
         ],
-        "/CdkWorkshopStack/ViewHitCounter/ViewerEndpoint/CloudWatchRole/Resource": [
+        "/CdkWorkshopStack/BlogPipeline/Assets/FileAsset1/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "ViewHitCounterViewerEndpointCloudWatchRole87B94D6A"
+            "data": "BlogPipelineAssetsFileAsset11E8FEFAE"
           }
         ],
-        "/CdkWorkshopStack/ViewHitCounter/ViewerEndpoint/Account": [
+        "/CdkWorkshopStack/BlogPipeline/Assets/FileAsset2/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "ViewHitCounterViewerEndpointAccount0B75E76A"
-          }
-        ],
-        "/CdkWorkshopStack/ViewHitCounter/ViewerEndpoint/Deployment/Resource": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "ViewHitCounterViewerEndpointDeployment1CE7C57615fe4c294585f18a4ed474d2b246124b"
-          }
-        ],
-        "/CdkWorkshopStack/ViewHitCounter/ViewerEndpoint/DeploymentStage.prod/Resource": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "ViewHitCounterViewerEndpointDeploymentStageprodF3901FC7"
-          }
-        ],
-        "/CdkWorkshopStack/ViewHitCounter/ViewerEndpoint/Endpoint": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "ViewHitCounterViewerEndpointCA1B1E4B"
-          }
-        ],
-        "/CdkWorkshopStack/ViewHitCounter/ViewerEndpoint/Default/{proxy+}/Resource": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "ViewHitCounterViewerEndpointproxy2F4C239F"
-          }
-        ],
-        "/CdkWorkshopStack/ViewHitCounter/ViewerEndpoint/Default/{proxy+}/ANY/ApiPermission.CdkWorkshopStackViewHitCounterViewerEndpointA52B16FF.ANY..{proxy+}": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "ViewHitCounterViewerEndpointproxyANYApiPermissionCdkWorkshopStackViewHitCounterViewerEndpointA52B16FFANYproxy252C605A"
-          }
-        ],
-        "/CdkWorkshopStack/ViewHitCounter/ViewerEndpoint/Default/{proxy+}/ANY/ApiPermission.Test.CdkWorkshopStackViewHitCounterViewerEndpointA52B16FF.ANY..{proxy+}": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "ViewHitCounterViewerEndpointproxyANYApiPermissionTestCdkWorkshopStackViewHitCounterViewerEndpointA52B16FFANYproxy1404CEF4"
-          }
-        ],
-        "/CdkWorkshopStack/ViewHitCounter/ViewerEndpoint/Default/{proxy+}/ANY/Resource": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "ViewHitCounterViewerEndpointproxyANYFF4B8F5B"
-          }
-        ],
-        "/CdkWorkshopStack/ViewHitCounter/ViewerEndpoint/Default/ANY/ApiPermission.CdkWorkshopStackViewHitCounterViewerEndpointA52B16FF.ANY..": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "ViewHitCounterViewerEndpointANYApiPermissionCdkWorkshopStackViewHitCounterViewerEndpointA52B16FFANY00F849F4"
-          }
-        ],
-        "/CdkWorkshopStack/ViewHitCounter/ViewerEndpoint/Default/ANY/ApiPermission.Test.CdkWorkshopStackViewHitCounterViewerEndpointA52B16FF.ANY..": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "ViewHitCounterViewerEndpointANYApiPermissionTestCdkWorkshopStackViewHitCounterViewerEndpointA52B16FFANY9EC7D814"
-          }
-        ],
-        "/CdkWorkshopStack/ViewHitCounter/ViewerEndpoint/Default/ANY/Resource": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "ViewHitCounterViewerEndpointANY66F2285B"
-          }
-        ],
-        "/CdkWorkshopStack/GatewayUrl": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "GatewayUrl"
-          }
-        ],
-        "/CdkWorkshopStack/TableViewerUrl": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "TableViewerUrl"
+            "data": "BlogPipelineAssetsFileAsset2A3751DE7"
           }
         ],
         "/CdkWorkshopStack/CDKMetadata/Default": [

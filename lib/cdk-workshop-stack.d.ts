@@ -1,4 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
+import { Construct } from 'constructs';
 export declare class CdkWorkshopStack extends cdk.Stack {
-    constructor(scope: cdk.App, id: string, props?: cdk.StackProps);
+    readonly hcViewerUrl: cdk.CfnOutput;
+    readonly hcEndpoint: cdk.CfnOutput;
+    constructor(scope: Construct, id: string, props?: cdk.StackProps);
 }
