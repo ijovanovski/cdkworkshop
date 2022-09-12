@@ -12,7 +12,7 @@ export class WorkshopPipelineStack extends cdk.Stack {
 			synth: new CodeBuildStep("SynthStep", {
 				input: CodePipelineSource.connection(
 					"ijovanovski/cdkworkshop",
-					"main",
+					"master",
 					{
 						connectionArn:
 							"arn:aws:codestar-connections:eu-west-1:777124669255:connection/3714c303-1bb9-49e0-83f5-658237fc353f"
@@ -25,7 +25,8 @@ export class WorkshopPipelineStack extends cdk.Stack {
         
             //***********Instantiate the stage and add it to the pipeline***********
 		
-		    const deploy = new MyOutputStage(this, 'Deploy');
+		const deploy = new MyOutputStage(this, 'Deploy');
+		console.log('deployment started..');
             pipeline.addStage(deploy);
     
 	
